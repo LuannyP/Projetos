@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/Backgraund1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.box {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.box input[type = "text"],.box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.box a{
+    color: white;
+    text-decoration: none;
+}
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+} 
+.box input[type = "chackbox"]{
+    display: none;
+}
+.box label{
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10px;
+    top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    cursor: pointer;
+}
+.box label:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.box input[type = "checkbox"]:checked + label:after{
+    display: block;
+}
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+/* Estilos para a tela de autologin */
+.autologin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Estilos para o contêiner circular */
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-color: #d8baba36;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para a imagem de perfil dentro do círculo */
+.circle img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+/* Estilos para o texto dentro do círculo */
+.circle h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para os links dentro do círculo */
+.circle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    text-decoration: none;
+    color: #f0e2e2;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito hover nos links */
+.circle a:hover {
+    background-color: #1fb85a;
+    color: #5a15ca;
+}
